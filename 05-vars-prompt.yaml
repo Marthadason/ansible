@@ -1,5 +1,5 @@
 - name: variables from prompt
-  hosts: localhost
+  hosts: local host
     vars-prompt:
 - name: USERNAME
   prompt: please enter your name
@@ -9,5 +9,5 @@
     private: true # you can't see the value entered on screen
   tasks:
 - name: print variable values
-    ansible.builtin.debug:
+  ansible.builtin.debug:
     msg:"{{USER NAME}}", password{{PASSWORD}}
