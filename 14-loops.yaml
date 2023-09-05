@@ -3,8 +3,8 @@
   become: yes
   tasks:
   - name: install package
-    ansible.bulitin.package:
-      name:"{{item}}"
+    ansible.builtin.package:
+      name: "{{item}}"
       state: installed
     loop:
     - nginx
