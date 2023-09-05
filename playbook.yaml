@@ -3,6 +3,7 @@
   hosts: mongodb
 # this is list of tasks/modules/collections
   tasks: 
-    - name: pinging the node
-      ansible.builtin.debug:
-        msg: "this is my playbook"
+  - name: pinging the node
+    # this is the map
+    ansible.builtin.debug:
+      msg: "this is my playbook"
